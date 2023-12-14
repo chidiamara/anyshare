@@ -1,8 +1,8 @@
-import { Inter, Outfit } from 'next/font/google'
+import { Merriweather } from 'next/font/google'
 import './globals.css'
 // import Header from './_components/Header'
 
-const inter = Outfit({ subsets: ['latin'] })
+const theme = Merriweather({ subsets: ['latin'], weight: "400",})
 
 export const metadata = {
   title: 'File Control With Anyshare',
@@ -12,8 +12,8 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}
-      {/* <Header/> */}
+      <body className={theme.className}>
+        {children}
       </body>
     </html>
   )
