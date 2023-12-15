@@ -2,7 +2,7 @@ import { Merriweather } from 'next/font/google'
 import './globals.css'
 // import Header from './_components/Header'
 
-const theme = Merriweather({ subsets: ['latin'], weight: "400",})
+const theme = Merriweather ({ subsets: ['latin'], weight: "400",})
 
 export const metadata = {
   title: 'File Control With Anyshare',
